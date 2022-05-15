@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
     private val phone : String? by lazy {
         prefUser("phone")
-    }
+     }
 
 
 
