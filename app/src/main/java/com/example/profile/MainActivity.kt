@@ -182,7 +182,7 @@ class MainActivity : AppCompatActivity() {
         val pref = this.getSharedPreferences("mypref", MODE_PRIVATE)
         return pref.getString("phone" , "012345678")!!
     }
-
+    
     private fun updateName(name : String) {
         fireStoreRef.collection("users").document(phone).update("name" , name).addOnSuccessListener {
             nameText.isEnabled = false
@@ -197,7 +197,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-
+//**
     private fun checkStoragePermission() {
         if (ContextCompat.checkSelfPermission(
                 this,
@@ -233,7 +233,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-
+//*
 
 
 
