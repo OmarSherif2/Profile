@@ -9,6 +9,15 @@
     tools:context=".MainActivity">
 
 
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:translationZ="90dp"
+        android:indeterminate="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="181dp"
+        tools:layout_editor_absoluteY="296dp" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="0dp"
@@ -23,13 +32,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
+            android:src="@drawable/noimg"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:src="@drawable/ic_launcher_background"
             app:shapeAppearanceOverlay="@style/roundImageView"
-            />
+             />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -51,7 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:text="Omar Shrief"
+            android:text=""
             android:maxLength="25"
             android:imeOptions="actionDone"
             android:inputType="text"
@@ -69,7 +78,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:text="0123648962"
+            android:text=""
             android:textSize="17dp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -79,6 +88,7 @@
             android:id="@+id/enableDisableEditName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:visibility="gone"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:background="@android:color/transparent"
@@ -115,8 +125,9 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:text="Bio"
+            android:visibility="gone"
             android:textColor="@color/black"
-            android:textSize="18dp"
+            android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -130,9 +141,8 @@
             android:background="@android:color/transparent"
             android:imeOptions="actionDone"
             android:inputType="text"
-            android:text="Heeeey"
+            android:text=""
             android:textSize="17dp"
-            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -140,6 +150,7 @@
             android:id="@+id/enableDisableEditBio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:visibility="gone"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:background="@android:color/transparent"
