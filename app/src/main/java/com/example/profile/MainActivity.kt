@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         prefUser()
     }
 
-    var profId = "012345678"
+    var profId = "01012036925"
     var me = false
     var isFriend = false
     var privacy= false
